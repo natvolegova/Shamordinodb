@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Shamordinodb</string>
+    <string name="tv_putev">Путеводитель по монастырю</string>
+    <string name="tv_about">О монастыре</string>
+    <string name="desc_about">Казанская Амвросиевская ставропигиальная женская пустынь расположена близ селения Шамордино, в одном из красивейших уголков Святой Руси, между старинными городами Калугой и Козельском. Основана в 1884 году преподобным Амвросием Оптинским по завещанию его духовной дочери монахини Амвросии (Ключаревой, 1818-1881) и на ее средства. Еще при жизни призревая престарелых вдов и сирот-девиц, желающих посвятить себя служению Богу, она завещала устроить женскую общину в принадлежавшем ей имении Шамордино.</string>
+    <string name="tv_name_putev">Путеводитель по монастырю</string>
+    <string name="tv_name_molitv">Молитвослов</string>
+    <string name="name_contacts">Контакты</string>
+    <string name="name_pominoveniya">Поминовения</string>
+    <string name="name_novos">Новоначальным</string>
+    <string name="name_palmers">Паломникам</string>
+    <string name="name_timetable">Расписание богослужений</string>
+    <string name="title_activity_maps">Map</string>
+</resources>

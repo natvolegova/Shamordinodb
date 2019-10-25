@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/mainBackground"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/main_bg" />
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme" />
+
+        <ImageView
+            android:id="@+id/ico_logo"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="88dp"
+            app:srcCompat="@drawable/ic_logo" />
+
+        <ImageView
+            android:id="@+id/ico_cross"
+            style="@style/ico_cross"
+            android:src="@drawable/ic_ico_cross" />
+
+        <include
+            android:id="@+id/includeHighloadRandom"
+            layout="@layout/highload_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ico_cross"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp" />
+
+        <include
+            android:id="@+id/includeCardMain"
+            layout="@layout/main_card_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/includeHighloadRandom" />
+
+        <TextView
+            android:id="@+id/titlePutev"
+            style="@style/Heading1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/includeCardMain"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/tv_name_putev" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_list_object_put"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:nestedScrollingEnabled="false"
+            android:layout_below="@id/titlePutev" />
+
+        <TextView
+            android:id="@+id/titleMolitv"
+            style="@style/Heading1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rv_list_object_put"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/tv_name_molitv" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_list_molitv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="24dp"
+            android:nestedScrollingEnabled="false"
+            android:layout_below="@id/titleMolitv" />
+
+    </RelativeLayout>
+</ScrollView>

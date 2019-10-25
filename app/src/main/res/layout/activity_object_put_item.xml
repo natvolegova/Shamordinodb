@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.ObjectPutItemActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/mainBackground"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/main_bg" />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:visibility="gone"
+            />
+        <View
+            android:id="@+id/bg_detail"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginTop="176dp"
+            android:background="@drawable/transparent_background"
+            />
+        <me.relex.circleindicator.CircleIndicator
+            android:id="@+id/circle"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_alignBottom="@id/viewPager"
+            android:layout_centerHorizontal="true"
+            app:ci_drawable="@drawable/circle_selected"
+            app:ci_drawable_unselected="@drawable/circle"
+            android:visibility="gone"
+            android:padding="16dp" />
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:navigationIcon="@drawable/arrow_back" />
+
+        <ImageView
+            android:id="@+id/ico_cross"
+            style="@style/ico_cross"
+            android:src="@drawable/ic_ico_cross" />
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/Heading1.Detail"
+            android:layout_below="@+id/ico_cross"
+            />
+        <TextView
+            android:id="@+id/text_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_below="@+id/title"
+            />
+
+        <ImageButton
+            android:id="@+id/btn_start"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignEnd="@id/mainBackground"
+            android:layout_marginTop="216dp"
+            android:layout_marginEnd="16dp"
+            android:visibility="gone"
+            android:background="@color/colorPrimaryDark"
+            app:srcCompat="@drawable/ic_headset" />
+        <ImageButton
+            android:id="@+id/btn_pause"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignEnd="@id/btn_start"
+            android:layout_marginTop="216dp"
+            android:layout_marginEnd="16dp"
+            android:visibility="gone"
+            android:background="@color/colorPrimaryDark"
+            app:srcCompat="@drawable/ic_pause" />
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="224dp"
+            android:layout_marginRight="48dp"
+            android:backgroundTint="@color/colorBackground"
+            android:progressTint="@color/colorBackground"
+            android:thumbTint="@color/colorDevider"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+</ScrollView>
